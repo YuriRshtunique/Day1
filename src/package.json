@@ -1,0 +1,19 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "application for workshop",
+  "main": "app.js",
+  "scripts": {
+    "test": "nmp install express router"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node app.js"
+  },
+  "keywords": [
+    "curl",
+    "http://localhost:8080"
+  ],
+  "author": "yuri",
+  "license": "ISC"
+}
