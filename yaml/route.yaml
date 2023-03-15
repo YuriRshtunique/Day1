@@ -1,5 +1,5 @@
 kind: Route
-apiVersion: route.openshift.io/v3
+apiVersion: route.openshift.io/v4
 metadata:
 # set your user name
   name:  user14-hello-world
