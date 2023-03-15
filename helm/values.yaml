@@ -3,7 +3,7 @@ ReplicaNumber: 3
 containers:
   containerPort: 8080
   image: 'quay.io/yuri_rshtunique/myimage'
-  tag: 'chart_v5'
+  tag: 'v6'
 
 service:
   servicePort: 8080
