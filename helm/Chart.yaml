@@ -1,4 +1,4 @@
-apiVersion: v4
+apiVersion: v5
 name: hello-world
 description: A Helm chart for Kubernetes
 type: application
