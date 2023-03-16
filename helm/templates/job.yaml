@@ -21,7 +21,7 @@ spec:
         - name: SERVICE
           value: {{ .Release.Name }}-service
         - name: PORT
-          value: {{ .Values.service.servicePort }}
+          value: {{ .Values.service.servicePort | quate }}
         - name: TEST
-          value: {{ .Values.test }}#  jj
+          value: {{ .Values.test }}
   backoffLimit: 1
