@@ -34,4 +34,4 @@ test: HealD
 github:
   user: yuri_rshtunique
   token:  
-  url: <https://api.github.com/repos/{Git-userName}/{Repository-Name}/issues>
+  url: <https://api.github.com/repos/yuri_rshtunique/Day1/issues>
