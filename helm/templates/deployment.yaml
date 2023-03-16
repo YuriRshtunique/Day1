@@ -3,11 +3,6 @@ apiVersion: apps/v1
 metadata:
   name: {{ .Release.Name }}
 spec:
-  volumes:
-   - name: index-html
-     configMap:
-      name: index.html
-      defaultMode: 420
   replicas: {{ .Values.ReplicaNumber }}
   selector:
     matchLabels:
@@ -17,11 +12,16 @@ spec:
       labels:
         app: {{ .Release.Name }}
     spec:
+      volumes:
+      - name: index-html
+        configMap:
+          name: index.html
+          defaultMode: 420
       containers:
-        volumeMounts:
-        - name: index-html
-          mountPath: /tmp/html # this will mount the html.index file to it application location
         - resources: {}
+          volumeMounts:
+            - name: index-html 
+              mountPath: /tmp/html # this will mount the html.index file to it application location
           terminationMessagePath: /dev/termination-log
           name: {{ .Release.Name }}
           ports:
