@@ -30,3 +30,8 @@ volume:
     path: /tmp/html # this will mount the html.index file to it application location
 
 test: Healthy
+
+github:
+  user: yuri_rshtunique
+  token:  
+  url: <https://api.github.com/repos/{Git-userName}/{Repository-Name}/issues>
