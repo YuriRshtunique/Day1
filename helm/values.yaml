@@ -32,6 +32,6 @@ volume:
 test: HealD
 
 github:
-  user: yuri_rshtunique
+  user: YuriRshtunique
   token:  
-  url: https://api.github.com/repos/yuri_rshtunique/Day1/issues
+  url: https://api.github.com/repos/YuriRshtunique/Day1/issues
