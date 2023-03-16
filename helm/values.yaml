@@ -28,3 +28,5 @@ probes:
 volume:
   mount:
     path: /tmp/html # this will mount the html.index file to it application location
+
+test: Healthy
