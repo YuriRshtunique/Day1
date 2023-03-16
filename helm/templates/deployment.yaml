@@ -5,9 +5,9 @@ metadata:
 spec:
   volumes:
    - name: index-html
-    configMap:
-        name: index.html
-        defaultMode: 420
+     configMap:
+      name: index.html
+      defaultMode: 420
   replicas: {{ .Values.ReplicaNumber }}
   selector:
     matchLabels:
@@ -19,8 +19,8 @@ spec:
     spec:
       containers:
         volumeMounts:
-         - name: index-html
-           mountPath: /tmp/html # this will mount the html.index file to it application location
+        - name: index-html
+          mountPath: /tmp/html # this will mount the html.index file to it application location
         - resources: {}
           terminationMessagePath: /dev/termination-log
           name: {{ .Release.Name }}
