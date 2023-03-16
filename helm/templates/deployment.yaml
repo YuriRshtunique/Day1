@@ -12,8 +12,8 @@ spec:
       labels:
         app: {{ .Release.Name }}
       annotations:
-        #checksum/config: {{ include (print $.Template.BasePath "/ConfigMap.yaml") . | sha256sum }}
-        rollme: {{ randAlphaNum 5 | quote }}
+        checksum/config: {{ include (print $.Template.BasePath "/ConfigMap.yaml") . | sha256sum }}
+        #rollme: {{ randAlphaNum 5 | quote }}
     spec:
       volumes:
       - name: index-html
